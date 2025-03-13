@@ -54,17 +54,19 @@
             }
         });
 
-        function unsubscribe() {
-            const email = document.getElementById("email").value;
-            if (!email) {
-                alert("Моля, въведете имейл!");
-                return;
-            }
-            
-            // Пренасочване към Google Form с попълнен email
-            const formURL = "https://docs.google.com/forms/d/e/ТВОЯ-FORM-ID/viewform?usp=pp_url&entry.123456789=" + encodeURIComponent(email);
-            window.location.href = formURL;
-        }
+function unsubscribe() {
+    const email = document.getElementById("email").value;
+    if (!email) {
+        alert("Моля, въведете имейл!");
+        return;
+    }
+
+    // ТУК СМЕНИ entry.1208554710 С ПРАВИЛНИЯ ID
+    const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSd2QRw0IPb5BoeicTo25Np9Z7grP_MLMMRTCaL_4N15Ug7X5w/viewform?usp=pp_url&entry.1208554710=" + encodeURIComponent(email);
+    
+    window.location.href = formURL;
+}
+
     </script>
 </body>
 </html>
